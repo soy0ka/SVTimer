@@ -11,5 +11,6 @@ setInterval(() => {
   const minutes = Math.floor((timeLeft % 3600) / 60)
   const seconds = Math.floor(timeLeft % 60)
   const milliseconds = Math.floor((timeLeft % 1) * 1000)
-  timer.innerText = `${hours}:${minutes}:${seconds}:${milliseconds}`
+  const formattedMilliseconds = milliseconds < 100 ? milliseconds < 10 ? `00${milliseconds}` : `0${milliseconds}` : milliseconds
+  timer.innerText = `${hours}:${minutes}:${seconds}:${formattedMilliseconds}`
 },1)
