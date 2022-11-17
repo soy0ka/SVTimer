@@ -15,8 +15,13 @@ body {
 }
 
 p {
+  width: max-content;
+  height: max-content;
+  text-align:center;
+  margin:auto;
+  margin-top: 150px;
   font-family: 'Pokemon GB';
   color: #ffffff;
-  font-size: 150px;
+  font-size: 9rem;
   text-shadow:7px 7px 7px #000;
 }
